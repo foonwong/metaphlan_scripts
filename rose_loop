@@ -1,0 +1,5 @@
+#!/bin/bash
+
+for i in {ACO,AO,B,BO,CO,nCO}{1..5}_{A,B}; do  
+	qsub -v NM="$i" m2_rose*.job 	
+done

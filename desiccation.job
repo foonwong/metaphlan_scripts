@@ -1,0 +1,46 @@
+#!/bin/bash
+export PRM="vSen-noWol"
+export BT2PS="--bt2_ps very-sensitive"
+export JOBNAME="desiccation_${PRM}"
+#PBS -N ${JOBNAME}
+#PBS -l walltime=100:00:00
+#PBS -l nodes=1:ppn=20
+#PBS -q q40
+
+# Comments:
+# Created on 04/02/18 by Foon Wong for math and biology collaboration effort headed by Dr. Sam Behseta and Dr. Parvin Shahrestani.
+# Metaphlan2 modified to pass option "--mm" to bowtie2 for memory efficiency
+
+# Setup environment variables source 
+source $PBS_O_WORKDIR/metaphlan2.env
+
+# Define input data source 
+export IN_DIR="/home/pshahrestani/desiccation"
+
+# Define output directory
+export OUT_DIR=$PBS_O_WORKDIR/${JOBNAME}
+
+if [ ! -d ${OUT_DIR} ]
+    then   
+    mkdir -p ${OUT_DIR} 
+fi
+
+# Change to biomath group which has access to input data
+newgrp biomath
+
+conda activate py27
+
+# Count the number of input data files, let that be the number of processors used for 
+# parallel data reads, max number of processors is 40.
+DATA_CNT=`ls -l $IN_DIR | wc -l`
+if [ $DATA_CNT -gt 20 ]
+    then 
+    DATA_CNT=20
+fi
+export NPROC=$DATA_CNT
+
+# Run the MetaPhlAn command with all of the parameters.
+export M2PS="--bowtie2db $mpa_dir/databases/mpa_v20_m200 ${BT2PS} --nproc ${NPROC} --input_type multifastq --ignore_markers $HOME/jobscripts/*filter.txt"
+metaphlan2.py ${M2PS} --bowtie2out ${OUT_DIR}/"$NM".bowtie2.bz2 -o ${OUT_DIR}/"$NM".profile <(zcat $IN_DIR/"$NM"*) 
+
+conda deactivate

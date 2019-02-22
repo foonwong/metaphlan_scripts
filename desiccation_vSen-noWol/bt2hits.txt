@@ -1,0 +1,10 @@
+12058 ./C1.bowtie2.bz2
+17522 ./C3.bowtie2.bz2
+3253 ./C4.bowtie2.bz2
+10050 ./C5.bowtie2.bz2
+7242 ./C2.bowtie2.bz2
+5422 ./D5.bowtie2.bz2
+3662 ./D4.bowtie2.bz2
+5191 ./D1.bowtie2.bz2
+3902 ./D2.bowtie2.bz2
+2656 ./D3.bowtie2.bz2

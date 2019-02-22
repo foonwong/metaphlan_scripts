@@ -1,0 +1,7 @@
+#!/bin/bash
+
+for i in {C,S}{1..4}; do
+	qsub -v NM="$i" m2_fungal*.job
+done
+
+qsub -v NM="P1" m2_fungal*.job

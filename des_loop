@@ -1,0 +1,7 @@
+#!/bin/bash
+
+for i in D{1..5} 
+do
+	qsub -v NM="$i" des*.job
+done
+

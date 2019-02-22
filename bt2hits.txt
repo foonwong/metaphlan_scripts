@@ -1,0 +1,9 @@
+10052 ./0402_m2_fun_noWlbSen-Loc/S2.bowtie2.bz2
+7048 ./0402_m2_fun_noWlbSen-Loc/S3.bowtie2.bz2
+7345 ./0402_m2_fun_noWlbSen-Loc/C2.bowtie2.bz2
+9070 ./0402_m2_fun_noWlbSen-Loc/C1.bowtie2.bz2
+9636 ./0402_m2_fun_noWlbSen-Loc/S1.bowtie2.bz2
+6484 ./0402_m2_fun_noWlbSen-Loc/P1.bowtie2.bz2
+3721 ./0402_m2_fun_noWlbSen-Loc/C3.bowtie2.bz2
+7599 ./0402_m2_fun_noWlbSen-Loc/C4.bowtie2.bz2
+6985 ./0402_m2_fun_noWlbSen-Loc/S4.bowtie2.bz2

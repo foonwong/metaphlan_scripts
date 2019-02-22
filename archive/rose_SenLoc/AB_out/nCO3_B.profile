@@ -1,0 +1,14 @@
+#SampleID	Metaphlan2_Analysis
+k__Bacteria	100.0
+k__Bacteria|p__Proteobacteria	58.36853
+k__Bacteria|p__Firmicutes	41.63147
+k__Bacteria|p__Proteobacteria|c__Alphaproteobacteria	58.36853
+k__Bacteria|p__Firmicutes|c__Bacilli	41.63147
+k__Bacteria|p__Proteobacteria|c__Alphaproteobacteria|o__Rhodospirillales	58.36853
+k__Bacteria|p__Firmicutes|c__Bacilli|o__Lactobacillales	41.63147
+k__Bacteria|p__Proteobacteria|c__Alphaproteobacteria|o__Rhodospirillales|f__Acetobacteraceae	58.36853
+k__Bacteria|p__Firmicutes|c__Bacilli|o__Lactobacillales|f__Leuconostocaceae	41.63147
+k__Bacteria|p__Proteobacteria|c__Alphaproteobacteria|o__Rhodospirillales|f__Acetobacteraceae|g__Acetobacter	58.36853
+k__Bacteria|p__Firmicutes|c__Bacilli|o__Lactobacillales|f__Leuconostocaceae|g__Weissella	41.63147
+k__Bacteria|p__Proteobacteria|c__Alphaproteobacteria|o__Rhodospirillales|f__Acetobacteraceae|g__Acetobacter|s__Acetobacter_unclassified	58.36853
+k__Bacteria|p__Firmicutes|c__Bacilli|o__Lactobacillales|f__Leuconostocaceae|g__Weissella|s__Weissella_unclassified	41.63147
